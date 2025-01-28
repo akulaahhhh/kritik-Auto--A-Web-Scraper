@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 from providers.nst import NST
 from providers.thestar import TheStar
+from providers.malaymail import MalayMail
 
 load_dotenv()
 
@@ -22,7 +23,7 @@ def main():
 
     print("Welcome to Kritik Long, Didn't Read(KLDR) developed by @aidilrx04")
 
-    post = input('Enter post url(valid sites now: nst, thestar): ')
+    post = input('Enter post url(valid sites now: nst, thestar, malaymail ): ')
 
     provider: Provider = None
 
@@ -30,6 +31,8 @@ def main():
         provider = NST(post)
     elif post.startswith('https://www.thestar.com.my/'):
         provider = TheStar(post)
+    elif post.startswith('https://www.malaymail.com/'):
+        provider = MalayMail(post)
     else:
         print("Invalid post url")
         exit(-1)

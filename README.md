@@ -2,7 +2,7 @@
 
 ***Developed by [@aidilrx04](https://github.com/aidilrx04) maintained by [@akulaahhhh](https://github.com/akulaahhhh)***
 
-A simple program to semi-automate article post insertion from other news source such as NST and TheStar.
+A simple program to semi-automate article post insertion from other news source such as NST TheStar and MalayMail.
 
 ## Features
 
